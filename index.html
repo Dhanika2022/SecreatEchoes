@@ -49,21 +49,24 @@
     <p>Enter the details below:</p>
     <form action="https://docs.google.com/forms/d/e/1FAIpQLSeKPsMJxLdWN6pqeUTzfinLyiBPM2ZUd6SXP-QHZyHxRpLFGg/viewform?usp=dialog" method="post" target="_blank">
         <!-- Gender Dropdown -->
-        <select name="gender" required>
-            <option value="" disabled selected>Select your gender</option>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-        </select><br>
+       <label for="gender">Gender:</label>
+    <select name="entry.246219010" id="gender" required>
+        <option value="" disabled selected>Select your gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select><br><br>
 
-        <!-- Age Number Input -->
-        <input type="number" name="age" placeholder="Your Age" required min="10" max="100"><br>
+    <!-- Age Number Input -->
+    <label for="age">Age:</label>
+    <input type="number" name="entry.1560358415" id="age" placeholder="Your Age" required min="1" max="120"><br><br>
 
-        <!-- Title Input -->
-        <input type="text" name="title" placeholder="Title of your confession" required><br>
+    <!-- Title Input -->
+    <label for="title">Title of Confession:</label>
+    <input type="text" name="entry.1794505664" id="title" placeholder="Title of your confession" required><br><br>
 
-        <!-- Confession Textarea -->
-        <textarea name="confession" placeholder="Type your confession here..." required></textarea><br>
-
+    <!-- Confession Textarea -->
+    <label for="confession">Your Confession:</label>
+    <textarea name="entry.965403105" id="confession" placeholder="Type your confession here..." required></textarea><br><br>
         <!-- Submit Button -->
         <button type="submit">Submit</button>
     </form>
