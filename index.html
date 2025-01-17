@@ -46,14 +46,8 @@
 </head>
 <body>
     <h1 class="form-title">Share Your Anonymous Confession</h1>
-    <p>Enter the title, your confession, gender, and age below:</p>
+    <p>Enter the details below:</p>
     <form action="YOUR_GOOGLE_FORM_LINK" method="post" target="_blank">
-        <!-- Title Input -->
-        <input type="text" name="title" placeholder="Title of your confession" required><br>
-
-        <!-- Confession Textarea -->
-        <textarea name="confession" placeholder="Type your confession here..." required></textarea><br>
-
         <!-- Gender Dropdown -->
         <select name="gender" required>
             <option value="" disabled selected>Select your gender</option>
@@ -63,6 +57,12 @@
 
         <!-- Age Number Input -->
         <input type="number" name="age" placeholder="Your Age" required min="10" max="100"><br>
+
+        <!-- Title Input -->
+        <input type="text" name="title" placeholder="Title of your confession" required><br>
+
+        <!-- Confession Textarea -->
+        <textarea name="confession" placeholder="Type your confession here..." required></textarea><br>
 
         <!-- Submit Button -->
         <button type="submit">Submit</button>
