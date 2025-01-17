@@ -20,7 +20,7 @@
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        input, textarea, button {
+        input, textarea, select, button {
             width: 100%;
             margin: 10px 0;
             padding: 10px;
@@ -46,10 +46,25 @@
 </head>
 <body>
     <h1 class="form-title">Share Your Anonymous Confession</h1>
-    <p>Enter the title and your confession below:</p>
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLSeKPsMJxLdWN6pqeUTzfinLyiBPM2ZUd6SXP-QHZyHxRpLFGg/viewform?usp=dialog" method="post" target="_blank">
+    <p>Enter the title, your confession, gender, and age below:</p>
+    <form action="YOUR_GOOGLE_FORM_LINK" method="post" target="_blank">
+        <!-- Title Input -->
         <input type="text" name="title" placeholder="Title of your confession" required><br>
+
+        <!-- Confession Textarea -->
         <textarea name="confession" placeholder="Type your confession here..." required></textarea><br>
+
+        <!-- Gender Dropdown -->
+        <select name="gender" required>
+            <option value="" disabled selected>Select your gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br>
+
+        <!-- Age Number Input -->
+        <input type="number" name="age" placeholder="Your Age" required min="10" max="100"><br>
+
+        <!-- Submit Button -->
         <button type="submit">Submit</button>
     </form>
 </body>
